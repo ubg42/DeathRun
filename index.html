@@ -1,16 +1,18 @@
-<html><head>
+<html>
+	<head>
+		<title>Death Run</title>
 	<link rel="stylesheet" href="TemplateData/style.css">
 <style>
 body {
   overflow: hidden;  
 }
 </style>
-<script src="/TemplateData/UnityProgress.js"></script>
+<script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/death_run_wasm_v1.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
     </script>
-	<script src="/api.js"></script>
+
     <style type="text/css">#button {
   display:none;
 }
